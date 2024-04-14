@@ -1,0 +1,245 @@
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115
+$ git init
+Initialized empty Git repository in D:/Hemija/Faculty/si/SI_2024_lab1_212115/.git/
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (master)
+$ git remote add origin https://github.com/marksto02/SI_2024_lab1_212115
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (master)
+$ echo "Marko Stojanovski 212115" >> README.md
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (master)
+$ git add README.md
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (master)
+$ git commit -m "Initial commit"
+[master (root-commit) 3f3448d] Initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 253 bytes | 253.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/marksto02/SI_2024_lab1_212115
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (master)
+$ git add .
+warning: in the working copy of 'SILab1Main.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'SILab1_1.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'SILab1_2.java', LF will be replaced by CRLF the next time Git touches it
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (master)
+$ git commit -m "Add starter code"
+[master 7b7798d] Add starter code
+ 3 files changed, 47 insertions(+)
+ create mode 100644 SILab1Main.java
+ create mode 100644 SILab1_1.java
+ create mode 100644 SILab1_2.java
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (master)
+$ git push -u origin master
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 952 bytes | 952.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/marksto02/SI_2024_lab1_212115
+   3f3448d..7b7798d  master -> master
+branch 'master' set up to track 'origin/master'.
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (master)
+$ git pull -p
+Already up to date.
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (master)
+$ git branch bug1
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (master)
+$ git branch bug2
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (master)
+$ git checkout bug1
+Switched to branch 'bug1'
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (bug1)
+$ git add .
+warning: in the working copy of 'SILab1_1.java', LF will be replaced by CRLF the next time Git touches it
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (bug1)
+$ git commit -m "Fix wrong condition in filterOddLengthStrings"
+[bug1 3d0ddc4] Fix wrong condition in filterOddLengthStrings
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (bug1)
+$ git checkout bug2
+Switched to branch 'bug2'
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (bug2)
+$ git add .
+warning: in the working copy of 'SILab1_2.java', LF will be replaced by CRLF the next time Git touches it
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (bug2)
+$ git commit -m "Fix wrong condition in makeBigStringFrom"
+[bug2 e3fc570] Fix wrong condition in makeBigStringFrom
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (bug2)
+$ git checkout bug1
+Switched to branch 'bug1'
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (bug1)
+$ git add .
+warning: in the working copy of 'SILab1Main.java', LF will be replaced by CRLF the next time Git touches it
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (bug1)
+$ git commit -m "Call method filterOddLengthStrings in main class"
+[bug1 2b00117] Call method filterOddLengthStrings in main class
+ 1 file changed, 1 insertion(+)
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (bug1)
+$ git checkout bug2
+Switched to branch 'bug2'
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (bug2)
+$ git add .
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (bug2)
+$ git commit -m " Call method makeBigStringFrom in main class
+>
+> "
+[bug2 7e3ec01]  Call method makeBigStringFrom in main class
+ 1 file changed, 1 insertion(+)
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (bug2)
+$ git checkout bug1
+Switched to branch 'bug1'
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (bug1)
+$ git push -u origin bug1
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 757 bytes | 757.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'bug1' on GitHub by visiting:
+remote:      https://github.com/marksto02/SI_2024_lab1_212115/pull/new/bug1
+remote:
+To https://github.com/marksto02/SI_2024_lab1_212115
+ * [new branch]      bug1 -> bug1
+branch 'bug1' set up to track 'origin/bug1'.
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (bug1)
+$ git checkout bug2
+Switched to branch 'bug2'
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (bug2)
+$ git push -u origin bug2
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 702 bytes | 702.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 3 local objects.
+remote:
+remote: Create a pull request for 'bug2' on GitHub by visiting:
+remote:      https://github.com/marksto02/SI_2024_lab1_212115/pull/new/bug2
+remote:
+To https://github.com/marksto02/SI_2024_lab1_212115
+ * [new branch]      bug2 -> bug2
+branch 'bug2' set up to track 'origin/bug2'.
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (bug2)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (master)
+$ git merge bug1
+Updating 7b7798d..2b00117
+Fast-forward
+ SILab1Main.java | 1 +
+ SILab1_1.java   | 2 +-
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (master)
+$ git push -u origin master
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/marksto02/SI_2024_lab1_212115
+   7b7798d..2b00117  master -> master
+branch 'master' set up to track 'origin/master'.
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (master)
+$ git checkout bug2
+Switched to branch 'bug2'
+Your branch is up to date with 'origin/bug2'.
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (bug2)
+$ git rebase master
+Auto-merging SILab1Main.java
+CONFLICT (content): Merge conflict in SILab1Main.java
+error: could not apply 7e3ec01...  Call method makeBigStringFrom in main class
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply 7e3ec01... Call method makeBigStringFrom in main class
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (bug2|REBASE 2/2)
+$ git add SILab1Main.java
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (bug2|REBASE 2/2)
+$ git rebase --continue
+[detached HEAD 65d7a6a]  Call method makeBigStringFrom in main class
+ 1 file changed, 4 insertions(+)
+Successfully rebased and updated refs/heads/bug2.
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (bug2)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (master)
+$ git merge bug2
+Updating 2b00117..65d7a6a
+Fast-forward
+ SILab1Main.java | 4 ++++
+ SILab1_2.java   | 2 +-
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (master)
+$ git push -u origin master
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 770 bytes | 770.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 3 local objects.
+To https://github.com/marksto02/SI_2024_lab1_212115
+   2b00117..65d7a6a  master -> master
+branch 'master' set up to track 'origin/master'.
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (master)
+$ git push -u origin bug1
+Everything up-to-date
+branch 'bug1' set up to track 'origin/bug1'.
+
+DARMAR@DARMAR MINGW64 /d/Hemija/Faculty/si/SI_2024_lab1_212115 (master)
+$ git push -u origin bug2 --force
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/marksto02/SI_2024_lab1_212115
+ + 7e3ec01...65d7a6a bug2 -> bug2 (forced update)
+branch 'bug2' set up to track 'origin/bug2'.
+
